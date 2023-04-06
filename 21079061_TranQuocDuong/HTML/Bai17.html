@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../CSS/Bai17.css" rel="stylesheet">
+      <script src="../JS/Bai17.js"></script>
+        
+    </head>
+    <body>
+        
+        <div class="wapper">
+            <h1> ĐĂNG KÝ TÀI KHOẢN</h1>
+
+            <form class="formlogin">
+                <table id="dau">
+                  <tr>
+                    <td> <label for="name">&emsp;Tên Đăng Nhập:</label></td>
+                    <td><input type="text" id="txt_name" size="35" placeholder="Hãy nhập vào tên đăng nhập" onblur="checkName();"><span id="errname">*</span><br></td>
+                  </tr>
+                  <tr>
+                    <td><label for="pass">&emsp;&emsp;&emsp;Mật Khẩu:</label></td>
+                    <td><input type="password" name="txtMK" id="txtMK" size="35" placeholder="Mật khẩu"aria-placeholder="Mật khẩu" onblur=" kiemTraPassword();"><span id="mk">*</span><br></td>
+                  </tr>
+                  <tr>
+                    <td><label for="repass" >Nhập Lại Mật Khẩu:&emsp;</label></td>
+                    <td><input type="password" name="txtXNMK" id="txtXNMK" size="35" aria-placeholder="Mật khẩu" onblur="kiemTraLaiPassword();">
+                      <span id="xnmk">*</span><br></td>
+                  </tr>
+                </table  >
+                 <h2>THÔNG TIN CÁ NHÂN</h2>
+              
+                <table id=dau_2>
+                    <tr>
+                      <td><label for="fullname">Họ Và Tên:</label></td>
+                      <td><input size="35" id="fullname" name="name2" type="text"
+                          placeholder="Nhập vào họ tên(bắt buộc đăng nhập") onblur="checkhoName();">
+                        <span id="errfullname">*</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="bdate">Ngày Sinh:</label></td>
+                      <td align="left"><input input size="35" id="bdate" name="bdate"
+                          type="date"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="gender">Giới tính:</label></td>
+                      <td align="left">
+                        <input type="radio" id="gender">Nam
+                        <input type="radio" id="gender">Nữ
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="address">Địa chỉ:</label></td>
+                      <td><input size="35"txt_email type="text" name="address" id="address"
+                          placeholder="Nhập vào địa chỉ"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="phone">Điện thoại:</label></td>
+                      <td><input size="35" id="number_phone" name="phone" type="phone"
+                          placeholder="Nhập vào số điện thoại(9-10 số)"onblur="checkSDT();"> <span id="errorsdt">*</span></td>
+                         
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="email">Nhập vào email:</label>
+                      </td>
+                      <td>
+                        <input size="35" name="email" type="email" id="txt_email"
+                          placeholder="Nhập vào email dạng ten@tencongty.com" onblur="checkEmail();" ><span id="erremail">*</span>
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+                <div class="button">
+                  <button id="submit" onclick=kiemTra()>Đăng ký</button>
+                  <button>Hủy</button>
+                </div>
+         
+              </div>
+            </body>
+          </html>

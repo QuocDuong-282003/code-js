@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Facebook</title>
+        
+        <link href="../CSS/Bai18.css" rel="stylesheet">
+        <script src="../JS/Bai18.js"></script>
+    </head>
+    <body>
+        <div class="tong">
+
+            <div id="header">
+                <div class="logo">
+                    <!-- <img src="../image/fb.png" alt="facebook">  -->
+                    <p>facebook</p>
+                    <br>
+                </div>
+                <div class="header-signup">
+                    <form action="" method="get">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="user">Email hoặc điện thoại</label>
+                                </td>
+                                <td>
+                                    <label for="pass">Mật khẩu</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text/phone" size="20">
+                                </td>
+                                <td>
+                                    <input id="pass" name="pass" type="text"
+                                        size="20">
+                                </td>
+                                <td>
+                                    <input type="submit" value="Đăng nhập">
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <input id="mantain" name="mantain"
+                                        type="checkbox">
+                                    <label for="mantain">Duy trì đăng nhập</label>
+                                </td>
+                                <td>
+                                    <p><a href="">Quên mật khẩu</a></p>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </form>
+                </div>
+            </div>
+            <div id="nav">
+                <div class="than">
+                    <img src="../image/anh.png">
+                    <h3> &emsp;Cảm ơn bạn<br>
+                        đã ghé thăm!</h3>
+                </div>
+            </div>
+
+            <div id="section">
+                <div class="cuoi">
+                    <p>Đăng Ký</p>
+                    <h2>Miễn phí và sẽ luôn như vậy</h2>
+                    </div>
+                    <div class="from">
+                        <div>
+                        <label for="ho"></label>
+                        <input type="text" id="ho" placeholder="Họ" size="17">
+                        <label for="ten"></label>
+                        <input type="text" placeholder="Tên" id="ten"  size="17">
+                    </div>
+                        <div>
+                        <label for="email"></label>
+                        <input type="text" placeholder="Email đăng nhâp" id="email"size="48px">
+                    </div>
+                    <div>
+
+                        <label for="nhaplaiemail"></label>
+                        <input type="text" placeholder="Nhập lại email" id="nhaplaiemail" size="48px"
+                           >
+                    </div>
+                    <div>
+
+                        <label for="pass"></label>
+                        <input type="text" placeholder="Mật khẩu" id="pass"size="48px"
+                           >
+                    </div>
+                    <div>
+
+                        <label for="namsinh"></label>
+                        <input type="text" placeholder="Năm sinh" id="namsinh"size="48px"
+                            class="ten">
+                    </div>
+                    <div class="btn">
+                        <button type="submit" onclick="validate()" >Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+           
+            <div id="footer">
+                <h4>Chúng tôi mong sớm gặp lại bạn.</h4>
+            </div>
+        </div>
+        
+    </body>
+</html>

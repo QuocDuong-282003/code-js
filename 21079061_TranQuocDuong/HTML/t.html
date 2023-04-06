@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flower Shop</title>
+	<style>
+		/* table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #f2f2f2;
+		}
+		input[type=number] {
+			width: 50px;
+		}
+        */
+		/* #total-price {
+			font-weight: bold;
+		}  */
+        #content{
+        height: auto;
+        width: 650px;
+        border-collapse:collapse;  
+       
+		
+   
+     }
+     #content ,th,td{
+      border: 1px solid black;
+   
+     }
+     img{
+      width: 60%;
+      margin-top: 4px;
+      margin-left: 4px;
+     }
+	</style>
+    <script>
+		function updateTotalPrice() {
+			// Lấy giá trị của số lượng bó hoa của từng loại hoa
+			var rose = parseInt(document.getElementById("rose").value);
+			var tulip = parseInt(document.getElementById("tulip").value);
+			var daisy = parseInt(document.getElementById("daisy").value);
+            var dai= parseInt(document.getElementById("dai").value);
+			// Tính tổng thành tiền của từng loại hoa và tổng thành tiền của toàn bộ đơn hàng
+			var roseTotal = rose * 20000;
+			var tulipTotal = tulip * 40000;
+			var daisyTotal = daisy * 30000;
+            var fourPrice = dai * 50000;
+			var totalPrice = roseTotal + tulipTotal + daisyTotal + fourPrice;
+
+			// Cập nhật giá trị của các ô Total price và Total price của toàn bộ đơn hàng
+			document.getElementById("rose").innerHTML = "$" + roseTotal.toFixed(2);
+			document.getElementById("tulip").innerHTML = "$" + tulipTotal.toFixed(2);
+			document.getElementById("daisy").innerHTML = "$" + daisyTotal.toFixed(2);
+            document.getElementById("dai").innerHTML = "$" + fourPrice.toFixed(2);
+           document.getElementById("total-price").innerHTML=totalPrice +"  nghìn đồng";
+        }
+         </script>   
+</head>
+<body>
+	<h1>Flower Shop</h1>
+
+	<table id="content">
+		<tr>
+            <th>STT</th>
+            <th>Hình ảnh</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+		</tr>
+		<tr>
+			<td>1</td>
+            <div><td> <img src="../image/hoa.png"></td></div>
+
+			
+            <td >20000</td>
+            <td><input type="number" id="rose" min="0" onchange="updateTotalPrice()"></td>
+            <!-- <td id="rose-total">$0.00</td> -->
+		</tr>
+		<tr>
+			<td>2</td>
+            <div><td> <img src="../image/hoa1.png"></td></div>
+			<td >40000</td>
+			<td><input type="number" id="tulip" min="0" onchange="updateTotalPrice()"></td>
+			<!-- <td id="tulip-total">$0.00</td> -->
+		</tr>
+		<tr>
+			<td>3</td>
+            <div><td><img src="../image/hoa2.png"></td></div>
+            <td i>30000</td>
+			<td><input type="number" id="daisy" min="0" onchange="updateTotalPrice()"></td>
+			<!-- <td id="daisy-total">$0.00</td> -->
+		</tr>
+        <tr>
+			<td>4</td>
+            <div><td> <img src="../image/hoa3.png"></td></div>
+            <td >50000</td>
+			<td><input type="number" id="dai" min="0" onchange="updateTotalPrice()"></td>
+		
+            <!-- <td><span id="total-price"></span></td> -->
+           
+        </tr>
+        <tr>
+			<td></td>
+            <td></td>
+           <td>Tổng thành tiền</td>
+			<!-- <td><input type="number" id="daisy" min="0" onchange="updateTotalPrice()"></td> -->
+		
+            <td><span id="total-price"></span></td> 
+           
+        </tr>
+	</table>
+
+	<!-- <p>Total price: <span id="total-price">$0.00</span></p> -->
+</body>
+</html>

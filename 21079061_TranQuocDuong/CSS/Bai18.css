@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    
+    }
+    .tong{
+    width: 800px;
+    
+    margin: auto;
+    
+    
+    }
+     /* #header{
+    height: 70px;
+    border: 1px solid black;
+    border-bottom: 1px solid black; */
+    #header{
+        height:77px;
+        background-color: #4968a6;
+        display:flex;
+        justify-content:space-between;
+        color:white;
+    }
+    
+    
+    .header-signup{
+       width: 40%;
+    
+    }
+    .logo > p {
+        position: absolute;
+        width:200px;
+         height: 77px;
+        margin-left: -110px; 
+        font-size: 35px;
+        font-weight: bolder;
+       
+        
+    
+    }a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    #nav{
+    width:300px;
+    height: 430px;
+    float: left;
+     background-color: lavender; 
+    
+    }
+    .than img{
+        width: 95%;
+        
+    }
+    .than h3{
+        color: rgb(51, 106, 215);
+        font-size: 30px;
+        margin-left: 20px;
+        font-weight: lighter;
+         
+    }
+    #section{
+    width:500px;
+    height: 430px;
+    
+    background-color: lavender; 
+    float: right;
+    }
+    .cuoi {
+        margin-top: 15px;
+        padding: 10px;
+        margin-left: 29px;
+        
+    }
+    .cuoi p{
+        color: black;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .cuoi h2{
+        margin-top: 15px;
+        font-size: 19px;
+        font-weight: bolder;
+    }
+    .from input{
+        padding: 5px;
+        border-radius: 4px;
+    
+        margin-left: 29px;
+        padding-top: 5px;
+        margin-top: 10px;
+     
+    }
+    .btn {
+      text-align: left;
+      margin-top: 15px;
+      margin-left: 32px;
+    }
+    button{
+        width: 155px;
+        height: 35px;
+        background-color: green;
+        color: white;
+        border-radius: 3px;
+    }
+    .btn button:hover{
+        background-color: black;
+    }
+    
+    #footer{
+    height: 50px;
+    clear: both;
+    text-align: left;
+    background-color: lavender; 
+    
+    border: 1px solid transparent;
+    }
+    h4{
+     margin-top: 30px;
+     
+    
+    }
+    

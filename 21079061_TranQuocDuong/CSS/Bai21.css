@@ -1,0 +1,17 @@
+#content{
+    height: auto;
+    width: 650px;
+    border-collapse:collapse;  
+   
+    
+
+ }
+ #content ,th,td{
+  border: 1px solid black;
+
+ }
+ img{
+  width: 60%;
+  margin-top: 4px;
+  margin-left: 4px;
+ }

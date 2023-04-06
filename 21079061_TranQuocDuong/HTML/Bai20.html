@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="../JS/Bai20.js"></script>
+    </head>
+    <style>
+        .tong{
+            box-sizing: border-box;
+              margin:  0 auto;
+              border: 1px solid transparent;
+              width: 800px;
+              height: auto;
+        }
+        .content{
+              padding-top: 5px;
+              margin-left: 20px;
+              padding: 5px;
+        }
+        .content input{
+               margin-left: 20px;
+               margin-top: 5px;
+        }
+        .content select{
+            margin-left:6px;
+           width: 30.5%;
+           margin-top: 5px;
+        }
+        .submit{
+            padding: 5px;
+            margin-left: 20px;  
+            margin-top: 5px;
+        }
+       #myTable{
+        margin-top: 8px;
+        width: 500px;
+        margin-left: 20px;
+       } 
+       table,th, td {
+       border: 1px solid black;
+}
+        #myTable td{
+        height: 20px;
+       } 
+       #nutbam{
+        margin-top: 10px;
+        margin-left: 20px;
+       }
+    </style>  
+    <body>
+    <div class="tong">
+    <div class="content">
+        <div>
+        <label for="hoten">Họ  tên:</label>
+        <input type="text" id="hoten" size="30px">
+        </div>
+        
+        <div>
+        <label for="lop">Lớp :</label>&emsp;&emsp;<select id="lop" >  
+          <option value="class">Đại học Kỹ thuật phần mền 9A</option>
+        </select>
+        </div>
+        <div>
+        <label for="monhoc" >Môn học:</label>
+        <select id="monhoc" >
+            <option value="glasses" >Lập trình hướng đối tượng</option>
+        </select>
+    </div>
+    <div>
+        <label for="loai">Loại:</label>
+        &emsp;<input type="radio">Lý thuyết
+        <input type="radio">Thực hành
+    </div>
+    
+</div>
+    <div class="submit">
+       <button id="submit" onclick="addRow()">Đăng ký</button>
+       </div>
+    <table id="myTable" >
+        <tr>
+            <th>Họ tên</th>
+            <th>Lớp</th>
+            <th>Môn học đăng ký</th>
+            <th>Loại</th>
+        </tr>
+        <tr id="myRow">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+   <button  id="nutbam" type="button" onclick="myFunction()">Try it</button> 
+    </div>
+    
+</body>
+</html>

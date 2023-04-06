@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../CSS/Bai6.css">
+    <script src="../JS/Bai6.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="head">
+            <p>Calculator</p><br>
+            <div class="head-nav">
+                <p>&#8211;&#8211;</p>  
+                <!-- // &#8211;&#8211; dấu - -->
+                <p>&#9744;</p>
+                <!-- &#9744; hình vuông -->
+                <p>X</p>
+            </div>
+
+        </div>
+        <div class="nav">
+            <div class="home">&#8801;</div>
+            <h4>STANDARD</h4>
+        </div>
+        <table border="0">
+            <tr>
+                <td colspan="4" rowspan="5"><input type="text" id="result" disabled value="0"></td>
+            </tr>
+        </table>
+        <table>
+            <tr class="col1">
+                <td style="opacity:0.5">MC</td>
+                <!-- opacity:0.5 làm giảm độ trong suốt -->
+                <td style="opacity:0.5">MR</td>
+                <td>M+</td>
+                <td>M-</td>
+                <td>MS</td>
+                <td>M</td>
+            </tr>
+        </table>
+        <hr style="opacity:0.5" width="100%">
+        <table>
+            <tr>
+                <td>&#37;</td>
+                <td>&#8730;</td>
+                <td>X²</td>
+                <!-- sup  tạo văn bản có kích thước nhỏ hơn văn bản bình thường và nằm ở vị trí
+                 khoảng từ phân nửa trở lên so với văn bản bình thường -->
+                <td><sup>1</sup>/x</td>
+            </tr>
+            <tr>
+                <td>CE</td>
+                <td>C</td>
+                <td><input type="button" value="&#9746;" onclick="clearResult()"></td>
+                <td><input type="button" value="&#247;" onclick="appendToResult('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="appendToResult('7')"></td>
+                <td><input type="button" value="8" onclick="appendToResult('8')"></td>
+                <td><input type="button" value="9" onclick="appendToResult('9')"></td>
+                <td><input type="button" value="x" onclick="appendToResult('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="appendToResult('4')"></td>
+                <td><input type="button" value="5" onclick="appendToResult('5')"></td>
+                <td><input type="button" value="6" onclick="appendToResult('6')"></td>
+                <td><input type="button" value="-" onclick="appendToResult('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="appendToResult('1')"></td>
+                <td><input type="button" value="2" onclick="appendToResult('2')"></td>
+                <td><input type="button" value="3" onclick="appendToResult('3')"></td>
+                <td><input type="button" value="+" onclick="appendToResult('+')"></td>
+            </tr>
+            <tr>
+                <td style="font-size:15px">&plusmn; </td>
+                <td><input type="button" value="0" onclick="appendToResult('0')"></td>
+                <td><input type="button" value="." onclick="appendToResult('.')"></td>
+                <td><input type="button" value="=" onclick="calculateResult()"></td>
+            </tr>
+        </table>
+
+        
+    </div>
+</body>
+
+</html>

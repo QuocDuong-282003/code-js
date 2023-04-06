@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="../JS/Bai22.js"></script> 
+     
+
+    </head>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .tong{
+            width: 990px;
+            height: auto;
+            background-color: white;
+            border: 1px solid black;
+        }
+        header{
+            width: 990px;
+            height: 100px;
+            /* border: 1px solid black; */
+        }
+        header img{
+           width: 990px;
+           height: 100px;
+        }
+        header #menu_1 ul{
+            display: flex;
+            position: absolute;
+            margin-left: -10px;
+            transform: scale(1);
+            transition-property: transform;
+        }
+        header #menu_1 li:hover{
+            transform: scale(1.5);
+        }
+        header #menu_1 ul li{
+            margin-top: -29px;
+            list-style: none;
+             margin-left: 20px; 
+              border: 1px solid white;   
+            background-color:white;
+            position: relative;
+            border-radius: 5px 5px 0 0;
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-right: 0px;  
+        }
+      
+        header  #menu_1 ul li a{
+            text-decoration: none;
+            color: blue;
+            font-weight: bolder;
+          
+        }
+
+     
+        header  #menu_2 ul{
+            display: flex;
+            margin-top:-29px ;
+            margin-left: 850px;
+        }
+        header  #menu_2 ul li{
+           
+            list-style: none;
+            margin-left: 0px;
+             border: 1px solid white; 
+           
+            position: relative;
+        }
+        header  #menu_2 ul li a{
+            background-color: rgb(50, 119, 159);
+            text-decoration: none;
+            color: white;
+            font-weight: lighter;
+       }
+        menu{
+            width: 990px;
+            height: 50px;
+            /* border: 1px solid black; */
+            /* border-right: 1px solid black;
+            border-left: 1px solid black; */
+        }
+        menu  input{
+            height: 40px;
+            margin-top: 3px;
+            font-weight: bolder;
+            color: blue;
+            margin-left: 5px;
+            border-color:transparent
+        }
+        /* menu #menu_3  {
+              margin-bottom: 50px;
+              margin-top: -60px; 
+              margin-left: 210px;
+              
+             
+        } */
+        menu #menu_3 img{
+            height: 42px;
+            margin-top: 22px;
+            width: 779px;
+            margin-bottom: 13px;
+              margin-top: -60px; 
+              margin-left: 210px;
+        }
+      
+        nav{
+            width: 990px;
+            height: 40px;
+            /* border: 1px solid black; */
+             background-color: rgb(81, 165, 228); 
+             /* border-right: 1px solid black;
+            border-left: 1px solid black; */
+        }
+        nav #nav_1 ul{
+            display: flex;
+            margin-top: 3px;
+            height: 40px;
+            overflow: hidden;
+       
+ 
+          
+        }
+        nav #nav_1 ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 5px;
+            display: block;
+           line-height: 20px;
+           height: 40px;
+           border-left: 1px solid rgb(87, 87, 236);
+           
+           height: 40px;
+           text-align: center;
+           background: linear-gradient( rgb(16, 125, 209));
+           
+        }
+          
+        nav #nav_1 ul li a{
+            text-decoration: none;
+           font-weight: bolder;
+			color: white;
+		  font-weight: lighter;
+          position: relative;
+           padding: 6px 7x;
+           
+           
+        }
+         /* nav #nav_1 ul li a:hover{
+          
+         background: white;
+        }  */
+     
+        section{
+            width: 50%;
+            height: 450px;
+            /* border: 1px solid black; */
+            float: left;
+        }
+        section h3{
+            margin-top: 5px;
+            margin-left: 10px;
+            border: 1px solid beige;
+            height: 40px;
+            background-color: aliceblue;
+        }
+        #section_1{
+            margin-top: 10px;
+            margin-left: 70px;
+        }
+        #section_1 p{
+            margin-left: -60px;
+            font-weight:inherit;
+            font-size: 17px;
+         
+        }
+        #section_1 input{
+            margin-top: 10px;
+            margin: 10px;
+            
+        }
+        #section_1 select{
+            width: 100px;
+            margin: 1px;
+        }
+        #section_2  #dau {
+     padding-top: 15px;
+     margin-top: 10px;
+
+      }
+       #dau input{
+      border-radius: 1px;
+        margin-bottom: 9px;
+        height: 25px;
+      }
+      .button {
+    width:30%;
+    margin:auto;
+   
+}
+.button button{
+    text-align:center;
+    border:1px solid rgb(7, 12, 156);
+   font-weight: bolder;
+    background-color: aqua;
+    color:blue;
+    cursor:pointer;
+    height: 25px;
+}
+        aside{
+            width: 50%;
+            height: 450px;
+            /* border: 1px solid black; */
+            float: right;
+        }
+         aside  h4{
+            color: red;
+            font-weight: bolder;
+            font-size: 18px;
+            margin-top: 3px;
+            border: 1px solid antiquewhite;
+            height: 40px;
+            background-color: rgb(222, 235, 248);
+         }
+         #aside_1 p{
+            margin-left: 15px;
+            margin: 5px;
+            color:  rgb(5, 90, 126);
+            font-weight: bold;
+         }
+         .boder{
+            width: 470px;
+            height: 200px;
+            border: 1px solid transparent;
+         }
+         #aside_3  img{
+            margin-left: 10px;
+             margin-top: 10px; 
+            float:left;
+            width:120px;
+            height:120px;
+            margin:5px ;
+            
+         }
+         #aside_3 p{
+           color: blue;
+           font-weight: bolder;
+           font-size: 16px;
+         
+         }
+         #aside_4 img{
+            float:right;
+            margin-top: 0px;
+            width:120px;
+            height:120px;
+            margin-right: 99px;
+           
+            margin-left: 90px;
+         
+         }
+         #aside_4 p{
+           color: blue;
+           font-weight: bolder;
+           font-size: 16px;
+           text-align: right;
+            margin-top: -70px;
+           
+         }
+   footer{
+          width: 100%;
+            height: 120px;
+            border-top: 3px dotted darkgrey;
+            clear: both;
+   }
+   footer p{
+      margin-top: 20px;
+      margin-left: 10px;
+      color: rgb(5, 90, 126);
+      font-size: 15px;
+      font-weight: bolder;
+   }
+   #footer_1 h2{
+   float: right;
+   margin-top: -60px;
+   font-size: 19px;
+   margin-right: 15px;
+   border: 3px solid rgb(5, 90, 126);
+   height: 80px;
+   background-color: rgb(228, 241, 241);
+   color: rgb(5, 90, 126);
+   }
+   span{
+    color: red;
+   }
+    </style>
+    <body>
+        <div class="tong">
+    <header>
+        <div id="time">
+        <img src="../image/logo.png">
+    </div>
+        <div id="menu_1">
+            
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Media</a></li>
+                <li><a href="">Tuần san</a></li>
+                <li><a href="">Thể thao</a></li>
+                <li><a href="">Thanh niên</a></li>
+                <li><a href="">Cuộc sống số</a></li>
+                <li><a href="">Nhà đất</a></li>
+                <li><a href="">Tư vấn thuế</a></li>
+               
+            </ul> 
+        </div>
+        <div id="menu_2">
+            <ul>
+                <li><a href=""><i class="fa fa-home"></i>     Đặt làm trang chủ</a></li>
+            </ul>
+        </div>
+    </header>
+    <menu>
+        <input type="datetime-local"> 
+         
+        <div id="menu_3">
+            <img src="../image/time.png">
+            
+        </div>
+        
+    </menu>
+    <nav>
+        <div id="nav_1">
+            <ul>
+                <li><a href="..//HTML/Bai19.html">Chính trị -xã hội</a></li>
+                <li><a href="">Thế giới trẻ</a></li>
+                <li><a href="">Kinh tế</a></li>
+                <li><a href="">Thế giới</a></li>
+                <li><a href="">Văn hóa - Nghệ thuật</a></li>
+                <li><a href="">Giáo dục</a></li>
+                <li><a href="">CNTT</a></li>
+                <li><a href="">Khoa học</a></li>
+                <li><a href="">Sức khỏe</a></li>
+                <li><a href="">Đời sống</a></li>
+                <li><a href="">Kiều bào</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <h3>Thông tin đăng ký</h3>
+        <div id="section_1">
+            <p>Bạn phải khai báo đầy đủ các mục có đánh dấu *</p>
+            <td>Tên dầy đủ   
+                <input type="text" size="38px"></td>
+                <br><br>
+            <td>Ngày sinh 
+                :<select name="lang" id="lang-select">
+                <option value="">20</option>
+            </select>
+            <select name="lang" id="lang-select">
+                <option value="">4</option>
+            </select>
+            <select name="lang" id="lang-select">
+                <option value="">2010</option>
+            </select>
+            </td>
+            <br><br>
+            <td>Giới tính
+                :<select name="lang" id="lang-select">
+                <option value="">[Giới]</option>
+            </select></td>
+            <td>Nơi sống:
+            <select name="lang" id="lang-select">
+                <option value="">[Chọn tỉnh]</option>
+            </select>
+         
+            </td>
+        </div>
+        <div id="section_2">
+            <h3>Thông tin tài khoản</h3>
+             <div id="conten">
+                <form name="form1"  onsubmit=" submitForm();" method="post">
+                    <table id="dau">
+                      <tr>
+                        <td> <label for="name">&emsp;Tên truy cập:</label></td>
+                        <td><input type="text" id="txt_name" size="30" onblur="checkName();"><span id="errname">*</span><br></td>
+                      </tr>
+                      <tr>
+                        <td><label for="email">&emsp;Địa chỉ Email:</label></td>
+                        <td><input size="30" name="email" type="email" id="txt_email" onblur=" checkEmail();"><span id="erremail">*</span><br></td>
+                      </tr>
+                      <tr>
+                        <td><label for="pass">&emsp;&emsp;Mật Khẩu:</label></td>
+                        <td><input type="password" name="txtMK" id="txtMK" size="30"aria-placeholder="Mật khẩu" onblur="kiemTraPassword();"><span id="mk">*</span><br></td>
+                      </tr>
+                      <tr>
+                        <td><label for="repass">Nhập Lại Mật Khẩu:</label></td>
+                        <td><input type="password" name="txtXNMK" id="txtXNMK" size="30" aria-placeholder="Mật khẩu" onblur="kiemTraLaiPassword();">
+                          <span id="xnmk">*</span><br></td>
+                      </tr>
+                      </table>
+                      <div class="button">
+                        <button id="submit" onclick=kiemTra()>Chấp nhận</button>
+                     
+                        <button id="huy">Xác lập lại</button>
+                      </div>
+            </form>
+        </div>
+    </div>
+    </section>
+    <aside>
+        
+        <h4>Tin đọc nhiều nhất</h4>
+        <div id="aside_1">
+            <p>&#10148;   Hai học sinh chết đuối khi tắm biển</p>
+            <p>&#10148; Khám nghiệm hiện tượng vụ rơi đầm cầu</p>
+            <p>&#10148; Trả tiền công cho phạm nhân lao động ngoài trời?</p>
+            <p>&#10148; Rơi từ tầng 6, một công nhân tử vong</p>
+            <p>&#10148; Đà Nẵng kiểm tra các cơ sở sản xuất bún</p>
+        </div>
+        <div id="asude_2">
+            <h4>Nguồn cơn nổi lên"sưa tặc"</h4>
+            <div class="boder">
+            <div id="aside_3">
+                  <p> <img src="../image/rung1.png"> <br>Canh chừng <br>
+                    "sưa tặc"<br> 
+                      trên núi Cấm
+                      </p>
+            </div>
+        <div id="aside_4">
+            <p><img src="../image/rung2.png"> <br>  Chiêu thổi<br>
+       
+              giá gỗ sưa</p>
+        </div>
+        </div>
+        </div>
+    </aside>
+
+
+    <footer>
+        <p> &#169; 2003-2010 Bản quyền thuộc về <b>Báo Thanh Niên</b> </p>
+        <p>Ghi rõ nguồn <b>Thanh Niên Online</b>khi bạn phát hành lại thông tư từ Website này</p>
+    <div id="footer_1">
+      <h2><img src="../image/mcr.png">
+        Microsoft Office SharePoint Server 2007<br>
+        &emsp;  &emsp; Do Công ty <b>Vũ Thảo thiết kế và phát triễn</b> &emsp; 
+        </h2>
+    </div>
+    </footer>
+</div>
+    </body>
+</html>

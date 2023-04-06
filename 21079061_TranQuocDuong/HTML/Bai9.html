@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chuyển đổi độ F sang độ C</title>
+	<script>
+		function convertToFahrenheit() {
+			// Lấy giá trị độ F từ người dùng
+			var degFahren = prompt("Nhập giá trị độ F:");
+
+			// Chuyển đổi độ F sang độ C
+			var degCent = (degFahren - 32) * 5 / 9;
+
+			// Hiển thị kết quả
+			alert("Giá trị độ C tương ứng là: " + degCent);
+		}
+	</script>
+    
+</head>
+<body>
+	<button onclick="convertToFahrenheit()">Chuyển đổi độ F sang độ C</button>
+</body>
+</html>

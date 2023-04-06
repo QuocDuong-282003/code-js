@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <script>
+            
+		// Lặp qua các bảng cửu chương từ 1 đến 12
+           	for (var i = 1; i <= 12; i++) {
+			document.write("<h2>Bảng cửu chương " + i + "</h2>");
+
+               
+    
+                // Lặp qua các số từ 1 đến 10 trong bảng cửu chương
+                for (var j = 1; j <= 10; j++) {
+                    // Tính toán kết quả và hiển thị trên một dòng mới
+                    var result = i * j;
+                    document.write(i + " x " + j + " = " + result + "<br>");
+                }
+            }
+        </script>
+    <body>
+    
+    </body>
+</html>

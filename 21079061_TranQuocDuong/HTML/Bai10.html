@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nhập dữ liệu và đếm số ký tự</title>
+	<style>
+		textarea {
+			width: 300px;
+			height: 100px;
+			font-size: 16px;
+			padding: 5px;
+			border: 1px solid #ccc;
+		}
+
+		#char-count {
+			color: red;
+			margin-top: 5px;
+		}
+	</style>
+    <script >
+        	function countChars() {
+                // countChars()để đếm số ký tự đã nhập trong ô nhập dữ liệu và cập nhật số ký tự đã nhập trên trang web
+
+			var inputText = document.getElementById("input-text");
+			var charCount = document.getElementById("char-count");
+            // inputTextvà charCountđược sử dụng để tham chiếu đến thẻ <textarea>và thẻ <div>
+
+			var count = inputText.value.length;
+
+			charCount.innerHTML = "Số ký tự đã gõ: " + count;
+
+			if (count > 50) {
+				charCount.style.color = "red";
+				charCount.innerHTML += " (vượt quá 50 ký tự!)";
+			} else {
+				charCount.style.color = "black";
+			}
+		
+                }    
+                </script>
+               
+</head>
+<body>
+	<h1>Nhập dữ liệu và đếm số ký tự</h1>
+
+	<p>Nhập dữ liệu vào ô dưới đây:</p>
+
+    <!-- Sự kiện onkeyupđược sử dụng để gọi mỗi hàm countChars()khi người dùng nhập vào ô nhập dữ liệu. -->
+    
+	<textarea id="input-text" onkeyup="countChars()"></textarea>
+
+	<div id="char-count"></div>
+
+	
+	
+
+</body>
+</html>
